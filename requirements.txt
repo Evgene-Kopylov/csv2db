@@ -1,0 +1,4 @@
+python-dotenv~=1.0.0
+SQLAlchemy==1.4  # версия не указана из-за конфликтк при билде докерфайла
+alembic==1.10.2
+pydantic[email]==1.10.6
