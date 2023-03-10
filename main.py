@@ -9,4 +9,4 @@ db: Session = SessionLocal()
 
 
 if __name__ == "__main__":
-    log.info(f"Запуск. Имя БД {settings.DB_NAME}")
+    log.info(f"{settings.DB_NAME=}")
