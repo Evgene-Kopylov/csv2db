@@ -6,5 +6,7 @@ from conflog import log
 
 db: Session = SessionLocal()
 
+
+
 if __name__ == "__main__":
-    print("hello world")
+    log.info(f"Запуск. Имя БД {settings.DB_NAME}")
