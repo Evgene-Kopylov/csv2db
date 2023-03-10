@@ -8,9 +8,8 @@ load_dotenv(find_dotenv())
 
 
 class Settings(BaseSettings):
-    ACCESS_TOKEN: Optional[str] = None  # Телеграмм токен
     LOG_LEVEL: Optional[int] = 30  # logging level - уровень в стандартной библиотеке Logging.
-    DB_NAME: Optional[str] = "tg_bot.sqlite"
+    DB_NAME: Optional[str] = "db.sqlite"
 
 
 settings = Settings()
