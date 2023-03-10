@@ -17,8 +17,16 @@ depends_on = None
 
 
 def upgrade() -> None:
-    pass
+    op.create_table(
+        'crpterror',
+        sa.Column('_id', sa.Integer,
+                  primary_key=True, nullable=False),
+        sa.Column('report_date', sa.String),
+        sa.Column('report_period', sa.String),
+        sa.Column('inn', sa.String),
+        sa.Column('doc', sa.String),
+    )
 
 
 def downgrade() -> None:
-    pass
+    op.drop_table("crpterror")

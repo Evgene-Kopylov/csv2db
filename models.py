@@ -15,7 +15,9 @@ class Base:
         return camel2snake(cls.__name__)
 
 
-class TGContact(Base):
+class CRPTerror(Base):
     _id = Column(Integer, primary_key=True)
+    report_date = Column(String)
+    report_period = Column(String)
     inn = Column(String)
-    verified = Column(Integer)  # 0 = False / 1 = True
+    doc = Column(String)
